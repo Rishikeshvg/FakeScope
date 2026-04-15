@@ -1,0 +1,12 @@
+Training on 1280 reviews... Testing on 320 reviews.
+
+--- Baseline Model Performance ---
+              precision    recall  f1-score   support
+
+    Truthful       0.55      0.50      0.52       168
+   Deceptive       0.50      0.55      0.52       152
+
+    accuracy                           0.52       320
+   macro avg       0.52      0.52      0.52       320
+weighted avg       0.52      0.52      0.52       320
+

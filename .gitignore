@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Jupyter / temp
+.ipynb_checkpoints/
+
+# OS junk
+desktop.ini
+Thumbs.db
+
+# IDE files
+.vscode/
+
+# Your existing ones
+*.draft
+*.zip
+*.mp4
+*.mkv
