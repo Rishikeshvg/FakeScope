@@ -301,8 +301,10 @@ def render_verdict_card(text):
 @st.cache_resource
 def load_models():
     try:
-        model = joblib.load("hybrid_model.pkl")
-        tfidf = joblib.load("tfidf_vectorizer.pkl")
+        import os
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        model = joblib.load(os.path.join(BASE_DIR, "hybrid_model.pkl"))
+        tfidf = joblib.load(os.path.join(BASE_DIR, "tfidf_vectorizer.pkl"))
         return model, tfidf
     except FileNotFoundError:
         st.error("Error: Trained model files not found! Please run 'src/4_train_baseline.py' first.")
